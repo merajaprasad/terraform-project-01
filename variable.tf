@@ -1,14 +1,9 @@
-variable "instance_type" {
-}
-
-# NUMBER variable type
-variable "instance_count" {
-}
-
-
-variable "tags" {
-    
-}
+#variable "instance_type" {
+#}
+#variable "instance_count" {
+#}
+#variable "tags" {
+#}
 
 
 
