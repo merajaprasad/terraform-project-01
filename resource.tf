@@ -72,14 +72,14 @@ resource "aws_security_group" "mysg" {
 
 resource "aws_instance" "web" {
   ami           = "ami-06e46074ae430fba6"
-  instance_type = var.instance_type
-  count = var.instance_count
+  instance_type = "t2.micro"
+  count = 1
   subnet_id                   = aws_subnet.mysubnet.id
   vpc_security_group_ids      = [aws_security_group.mysg.id]
   associate_public_ip_address = true
 
   tags = {
-    Name = var.tags
+    Name = "Hello World"
   }
 }
 
